@@ -101,7 +101,7 @@ function nextScene() {
     const body = document.body;
     const img = document.getElementById("sceneImg");
 
-    
+    // Start normal music safely on first click
     if (!musicStarted) {
         normalMusic.volume = 0.5;
         normalMusic.play().catch(() => {});
@@ -129,7 +129,7 @@ function nextScene() {
         else if (scene === 3) {
             scene++;
 
-            // 🔥 SWITCH TO SPOOKY MUSIC
+            
             normalMusic.pause();
             normalMusic.currentTime = 0;
 
@@ -150,7 +150,7 @@ function nextScene() {
         else if (scene === 4) {
             scene++;
 
-          
+            
             spookyMusic.pause();
             spookyMusic.currentTime = 0;
 
@@ -196,4 +196,3 @@ function clearHearts() {
 
 </body>
 </html>
-
